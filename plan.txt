@@ -1,19 +1,27 @@
 To-Dos:
 
 - Display Connect Four Board
-  * Use javascript to create towers
-  *
-  * Javascript Loops to create Divs 
+  * Show 7 columns that are 6 units high
+  * Use divs instead of table (for now)
+  * Create divs using javascript loops
+    - Add container div to HTML body
+    - Use script tag at end of body element
+    - Create elements and append to container
+      div inside of main.js
+
 
 - Allow players to add pieces to board
   * Listen for player click
-  * Append div to tower that player clicks on
-  * 
+  * Append disc to column that player clicks on
+  * Alternate disc color between players
+
 
 - Win Condition
-  * Check for four in a row
-  * 
+  * Check for four discs of same color in a row
+    - Check horizontally, vertically, and diagonally
   * Create alert or win message
+  * Reset game / reload page
+
 
 - Class Names
   * container div = 'game'
@@ -24,10 +32,9 @@ To-Dos:
 
 Daily:
   - Standup after Demo
-  - Short standup at 7 central
+  - Short standup at 7pm CST
 
 
 Before Pushing To Repo:
-
   - git pull origin master 
   - if there are merge conflicts, check with team
