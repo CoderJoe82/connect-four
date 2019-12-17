@@ -1,0 +1,33 @@
+To-Dos:
+
+- Display Connect Four Board
+  * Use javascript to create towers
+  *
+  * Javascript Loops to create Divs 
+
+- Allow players to add pieces to board
+  * Listen for player click
+  * Append div to tower that player clicks on
+  * 
+
+- Win Condition
+  * Check for four in a row
+  * 
+  * Create alert or win message
+
+- Class Names
+  * container div = 'game'
+  * individual column = 'column'
+  * black disc = 'black'
+  * red disc = 'red' 
+
+
+Daily:
+  - Standup after Demo
+  - Short standup at 7 central
+
+
+Before Pushing To Repo:
+
+  - git pull origin master 
+  - if there are merge conflicts, check with team
