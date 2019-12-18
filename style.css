@@ -1,0 +1,31 @@
+.game {
+  border: 1px solid green;
+  display: flex;
+}
+
+.column {
+  width: 14.26%;
+  height: 96vh;
+  display: flex;
+  flex-direction: column-reverse;
+  border: 1px solid green;
+}
+.column:hover {
+  background: orange;
+}
+
+
+
+/* Individual Piece Classes */
+.disc {
+  height: 16vh;
+  width: 100%;
+}
+
+/* .black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+} */
