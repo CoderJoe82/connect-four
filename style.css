@@ -17,7 +17,6 @@ h1 {
     color: darkslategray;
     text-align: center;
     margin: 20px;
-
 }
 
 .black {
@@ -34,6 +33,7 @@ h1 {
 	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
 }
+
 .red {
     height: 80px;
     width: 80px;
@@ -49,8 +49,6 @@ h1 {
 
     
 }
-    
-
 
 .game {
     background-color: royalblue;
@@ -63,28 +61,38 @@ h1 {
     grid-column-gap: 1px;
     grid-row-gap: 1px;
     justify-items: stretch;*/
+}
 
+@keyframes blink {
+    0% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
 }
-@keyframes blink {  
-    0% { color: red; }
-    100% { color: black; }
-}
+
 @-webkit-keyframes blink {
-    0% { color: red; }
-    100% { color: black; }
+    0% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
 }
+
 .blink {
     -webkit-animation: blink 1.5s linear infinite;
     -moz-animation: blink 1.5s linear infinite;
     animation: blink 1.5 linear infinite;
-} 
+}
 
 .column {
     background-color: royalblue;
     flex-direction: column-reverse;
     margin: 0 auto;
-
 }
+
 .cell {
     height: 80px;
     width: 80px;
@@ -95,6 +103,7 @@ h1 {
     
     
 }
+
 .button {
     height: 50px;
     width: 80px;
