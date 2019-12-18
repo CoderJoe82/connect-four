@@ -19,134 +19,134 @@ const redBlackTurn = function(event) {
     const columnGrabber = document.getElementsByClassName("column");
     if (turn === "red") {
         if (event.currentTarget.lastElementChild.childElementCount === 0) {
-            const redPieceCreator = document.createElement("div");
-            redPieceCreator.classList.add("redpiece");
+            const redCreator = document.createElement("div");
+            redCreator.classList.add("red");
             if (event.currentTarget === columnGrabber[0]) {
-                redPieceCreator.id = "11";
+                redCreator.id = "11";
             } else if (event.currentTarget === columnGrabber[1]) {
-                redPieceCreator.id = "21";
+                redCreator.id = "21";
             } else if (event.currentTarget === columnGrabber[2]) {
-                redPieceCreator.id = "31";
+                redCreator.id = "31";
             } else if (event.currentTarget === columnGrabber[3]) {
-                redPieceCreator.id = "41";
+                redCreator.id = "41";
             } else if (event.currentTarget === columnGrabber[4]) {
-                redPieceCreator.id = "51";
+                redCreator.id = "51";
             } else if (event.currentTarget === columnGrabber[5]) {
-                redPieceCreator.id = "61";
+                redCreator.id = "61";
             } else if (event.currentTarget === columnGrabber[6]) {
-                redPieceCreator.id = "71"
+                redCreator.id = "71"
             }
-            event.currentTarget.lastElementChild.appendChild(redPieceCreator);
+            event.currentTarget.lastElementChild.appendChild(redCreator);
             turn = "black";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.childElementCount === 0) {
-            const redPieceCreator = document.createElement("div");
-            redPieceCreator.classList.add("redpiece");
+            const redCreator = document.createElement("div");
+            redCreator.classList.add("red");
             if (event.currentTarget === columnGrabber[0]) {
-                redPieceCreator.id = "12";
+                redCreator.id = "12";
             } else if (event.currentTarget === columnGrabber[1]) {
-                redPieceCreator.id = "22";
+                redCreator.id = "22";
             } else if (event.currentTarget === columnGrabber[2]) {
-                redPieceCreator.id = "32";
+                redCreator.id = "32";
             } else if (event.currentTarget === columnGrabber[3]) {
-                redPieceCreator.id = "42";
+                redCreator.id = "42";
             } else if (event.currentTarget === columnGrabber[4]) {
-                redPieceCreator.id = "52";
+                redCreator.id = "52";
             } else if (event.currentTarget === columnGrabber[5]) {
-                redPieceCreator.id = "62";
+                redCreator.id = "62";
             } else if (event.currentTarget === columnGrabber[6]) {
-                redPieceCreator.id = "72"
+                redCreator.id = "72"
             }
-            event.currentTarget.lastElementChild.previousElementSibling.appendChild(redPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.appendChild(redCreator);
             turn = "black";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.childElementCount === 0) {
-            const redPieceCreator = document.createElement("div");
-            redPieceCreator.classList.add("redpiece");
+            const redCreator = document.createElement("div");
+            redCreator.classList.add("red");
             if (event.currentTarget === columnGrabber[0]) {
-                redPieceCreator.id = "13";
+                redCreator.id = "13";
             } else if (event.currentTarget === columnGrabber[1]) {
-                redPieceCreator.id = "23";
+                redCreator.id = "23";
             } else if (event.currentTarget === columnGrabber[2]) {
-                redPieceCreator.id = "33";
+                redCreator.id = "33";
             } else if (event.currentTarget === columnGrabber[3]) {
-                redPieceCreator.id = "43";
+                redCreator.id = "43";
             } else if (event.currentTarget === columnGrabber[4]) {
-                redPieceCreator.id = "53";
+                redCreator.id = "53";
             } else if (event.currentTarget === columnGrabber[5]) {
-                redPieceCreator.id = "63";
+                redCreator.id = "63";
             } else if (event.currentTarget === columnGrabber[6]) {
-                redPieceCreator.id = "73"
+                redCreator.id = "73"
             }
-            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.appendChild(redPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.appendChild(redCreator);
             turn = "black";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
-            const redPieceCreator = document.createElement("div");
-            redPieceCreator.classList.add("redpiece");
+            const redCreator = document.createElement("div");
+            redCreator.classList.add("red");
             if (event.currentTarget === columnGrabber[0]) {
-                redPieceCreator.id = "14";
+                redCreator.id = "14";
             } else if (event.currentTarget === columnGrabber[1]) {
-                redPieceCreator.id = "24";
+                redCreator.id = "24";
             } else if (event.currentTarget === columnGrabber[2]) {
-                redPieceCreator.id = "34";
+                redCreator.id = "34";
             } else if (event.currentTarget === columnGrabber[3]) {
-                redPieceCreator.id = "44";
+                redCreator.id = "44";
             } else if (event.currentTarget === columnGrabber[4]) {
-                redPieceCreator.id = "54";
+                redCreator.id = "54";
             } else if (event.currentTarget === columnGrabber[5]) {
-                redPieceCreator.id = "64";
+                redCreator.id = "64";
             } else if (event.currentTarget === columnGrabber[6]) {
-                redPieceCreator.id = "74"
+                redCreator.id = "74"
             }
-            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
             turn = "black";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
-            const redPieceCreator = document.createElement("div");
-            redPieceCreator.classList.add("redpiece");
+            const redCreator = document.createElement("div");
+            redCreator.classList.add("red");
             if (event.currentTarget === columnGrabber[0]) {
-                redPieceCreator.id = "15";
+                redCreator.id = "15";
             } else if (event.currentTarget === columnGrabber[1]) {
-                redPieceCreator.id = "25";
+                redCreator.id = "25";
             } else if (event.currentTarget === columnGrabber[2]) {
-                redPieceCreator.id = "35";
+                redCreator.id = "35";
             } else if (event.currentTarget === columnGrabber[3]) {
-                redPieceCreator.id = "45";
+                redCreator.id = "45";
             } else if (event.currentTarget === columnGrabber[4]) {
-                redPieceCreator.id = "55";
+                redCreator.id = "55";
             } else if (event.currentTarget === columnGrabber[5]) {
-                redPieceCreator.id = "65";
+                redCreator.id = "65";
             } else if (event.currentTarget === columnGrabber[6]) {
-                redPieceCreator.id = "75"
+                redCreator.id = "75"
             }
-            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
             turn = "black";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
-            const redPieceCreator = document.createElement("div");
-            redPieceCreator.classList.add("redpiece");
+            const redCreator = document.createElement("div");
+            redCreator.classList.add("red");
             if (event.currentTarget === columnGrabber[0]) {
-                redPieceCreator.id = "16";
+                redCreator.id = "16";
             } else if (event.currentTarget === columnGrabber[1]) {
-                redPieceCreator.id = "26";
+                redCreator.id = "26";
             } else if (event.currentTarget === columnGrabber[2]) {
-                redPieceCreator.id = "36";
+                redCreator.id = "36";
             } else if (event.currentTarget === columnGrabber[3]) {
-                redPieceCreator.id = "46";
+                redCreator.id = "46";
             } else if (event.currentTarget === columnGrabber[4]) {
-                redPieceCreator.id = "56";
+                redCreator.id = "56";
             } else if (event.currentTarget === columnGrabber[5]) {
-                redPieceCreator.id = "66";
+                redCreator.id = "66";
             } else if (event.currentTarget === columnGrabber[6]) {
-                redPieceCreator.id = "76"
+                redCreator.id = "76"
             }
-            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
             turn = "black";
             console.log(turn);
             return;
@@ -155,134 +155,134 @@ const redBlackTurn = function(event) {
         console.log(event.currentTarget.lastElementChild);
         console.log(event.currentTarget.lastElementChild.lastElementChild);
         if (event.currentTarget.lastElementChild.childElementCount === 0) {
-            const blackPieceCreator = document.createElement("div");
-            blackPieceCreator.classList.add("blackpiece");
+            const blackCreator = document.createElement("div");
+            blackCreator.classList.add("black");
             if (event.currentTarget === columnGrabber[0]) {
-                blackPieceCreator.id = "11";
+                blackCreator.id = "11";
             } else if (event.currentTarget === columnGrabber[1]) {
-                blackPieceCreator.id = "21";
+                blackCreator.id = "21";
             } else if (event.currentTarget === columnGrabber[2]) {
-                blackPieceCreator.id = "31";
+                blackCreator.id = "31";
             } else if (event.currentTarget === columnGrabber[3]) {
-                blackPieceCreator.id = "41";
+                blackCreator.id = "41";
             } else if (event.currentTarget === columnGrabber[4]) {
-                blackPieceCreator.id = "51";
+                blackCreator.id = "51";
             } else if (event.currentTarget === columnGrabber[5]) {
-                blackPieceCreator.id = "61";
+                blackCreator.id = "61";
             } else if (event.currentTarget === columnGrabber[6]) {
-                blackPieceCreator.id = "71";
+                blackCreator.id = "71";
             }
-            event.currentTarget.lastElementChild.appendChild(blackPieceCreator);
+            event.currentTarget.lastElementChild.appendChild(blackCreator);
             turn = "red";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.childElementCount === 0) {
-            const blackPieceCreator = document.createElement("div");
-            blackPieceCreator.classList.add("blackpiece");
+            const blackCreator = document.createElement("div");
+            blackCreator.classList.add("black");
             if (event.currentTarget === columnGrabber[0]) {
-                blackPieceCreator.id = "12";
+                blackCreator.id = "12";
             } else if (event.currentTarget === columnGrabber[1]) {
-                blackPieceCreator.id = "22";
+                blackCreator.id = "22";
             } else if (event.currentTarget === columnGrabber[2]) {
-                blackPieceCreator.id = "32";
+                blackCreator.id = "32";
             } else if (event.currentTarget === columnGrabber[3]) {
-                blackPieceCreator.id = "42";
+                blackCreator.id = "42";
             } else if (event.currentTarget === columnGrabber[4]) {
-                blackPieceCreator.id = "52";
+                blackCreator.id = "52";
             } else if (event.currentTarget === columnGrabber[5]) {
-                blackPieceCreator.id = "62";
+                blackCreator.id = "62";
             } else if (event.currentTarget === columnGrabber[6]) {
-                blackPieceCreator.id = "72";
+                blackCreator.id = "72";
             }
-            event.currentTarget.lastElementChild.previousElementSibling.appendChild(blackPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.appendChild(blackCreator);
             turn = "red";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.childElementCount === 0) {
-            const blackPieceCreator = document.createElement("div");
-            blackPieceCreator.classList.add("blackpiece");
+            const blackCreator = document.createElement("div");
+            blackCreator.classList.add("black");
             if (event.currentTarget === columnGrabber[0]) {
-                blackPieceCreator.id = "13";
+                blackCreator.id = "13";
             } else if (event.currentTarget === columnGrabber[1]) {
-                blackPieceCreator.id = "23";
+                blackCreator.id = "23";
             } else if (event.currentTarget === columnGrabber[2]) {
-                blackPieceCreator.id = "33";
+                blackCreator.id = "33";
             } else if (event.currentTarget === columnGrabber[3]) {
-                blackPieceCreator.id = "43";
+                blackCreator.id = "43";
             } else if (event.currentTarget === columnGrabber[4]) {
-                blackPieceCreator.id = "53";
+                blackCreator.id = "53";
             } else if (event.currentTarget === columnGrabber[5]) {
-                blackPieceCreator.id = "63";
+                blackCreator.id = "63";
             } else if (event.currentTarget === columnGrabber[6]) {
-                blackPieceCreator.id = "73";
+                blackCreator.id = "73";
             }
-            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.appendChild(blackPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.appendChild(blackCreator);
             turn = "red";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
-            const blackPieceCreator = document.createElement("div");
-            blackPieceCreator.classList.add("blackpiece");
+            const blackCreator = document.createElement("div");
+            blackCreator.classList.add("black");
             if (event.currentTarget === columnGrabber[0]) {
-                blackPieceCreator.id = "14";
+                blackCreator.id = "14";
             } else if (event.currentTarget === columnGrabber[1]) {
-                blackPieceCreator.id = "24";
+                blackCreator.id = "24";
             } else if (event.currentTarget === columnGrabber[2]) {
-                blackPieceCreator.id = "34";
+                blackCreator.id = "34";
             } else if (event.currentTarget === columnGrabber[3]) {
-                blackPieceCreator.id = "44";
+                blackCreator.id = "44";
             } else if (event.currentTarget === columnGrabber[4]) {
-                blackPieceCreator.id = "54";
+                blackCreator.id = "54";
             } else if (event.currentTarget === columnGrabber[5]) {
-                blackPieceCreator.id = "64";
+                blackCreator.id = "64";
             } else if (event.currentTarget === columnGrabber[6]) {
-                blackPieceCreator.id = "74";
+                blackCreator.id = "74";
             }
-            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
             turn = "red";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
-            const blackPieceCreator = document.createElement("div");
-            blackPieceCreator.classList.add("blackpiece");
+            const blackCreator = document.createElement("div");
+            blackCreator.classList.add("black");
             if (event.currentTarget === columnGrabber[0]) {
-                blackPieceCreator.id = "15";
+                blackCreator.id = "15";
             } else if (event.currentTarget === columnGrabber[1]) {
-                blackPieceCreator.id = "25";
+                blackCreator.id = "25";
             } else if (event.currentTarget === columnGrabber[2]) {
-                blackPieceCreator.id = "35";
+                blackCreator.id = "35";
             } else if (event.currentTarget === columnGrabber[3]) {
-                blackPieceCreator.id = "45";
+                blackCreator.id = "45";
             } else if (event.currentTarget === columnGrabber[4]) {
-                blackPieceCreator.id = "55";
+                blackCreator.id = "55";
             } else if (event.currentTarget === columnGrabber[5]) {
-                blackPieceCreator.id = "65";
+                blackCreator.id = "65";
             } else if (event.currentTarget === columnGrabber[6]) {
-                blackPieceCreator.id = "75";
+                blackCreator.id = "75";
             }
-            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
             turn = "red";
             console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
-            const blackPieceCreator = document.createElement("div");
-            blackPieceCreator.classList.add("blackpiece");
+            const blackCreator = document.createElement("div");
+            blackCreator.classList.add("black");
             if (event.currentTarget === columnGrabber[0]) {
-                blackPieceCreator.id = "16";
+                blackCreator.id = "16";
             } else if (event.currentTarget === columnGrabber[1]) {
-                blackPieceCreator.id = "26";
+                blackCreator.id = "26";
             } else if (event.currentTarget === columnGrabber[2]) {
-                blackPieceCreator.id = "36";
+                blackCreator.id = "36";
             } else if (event.currentTarget === columnGrabber[3]) {
-                blackPieceCreator.id = "46";
+                blackCreator.id = "46";
             } else if (event.currentTarget === columnGrabber[4]) {
-                blackPieceCreator.id = "56";
+                blackCreator.id = "56";
             } else if (event.currentTarget === columnGrabber[5]) {
-                blackPieceCreator.id = "66";
+                blackCreator.id = "66";
             } else if (event.currentTarget === columnGrabber[6]) {
-                blackPieceCreator.id = "76";
+                blackCreator.id = "76";
             }
-            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackPieceCreator);
+            event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
             turn = "red";
             console.log(turn);
             return;
