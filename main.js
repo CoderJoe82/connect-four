@@ -8,7 +8,7 @@ function createTowers() {
         gameHolder.appendChild(gameTower);
         for (i = 0; i < 6; i++) {
             const cellCreator = document.createElement("div");
-            cellCreator.classList.add("cells");
+            cellCreator.classList.add("cell");
             gameTower.appendChild(cellCreator);
         }
     }
@@ -17,7 +17,6 @@ createTowers();
 
 const redBlackTurn = function(event) {
     const columnGrabber = document.getElementsByClassName("column");
-    const cellGrabber = document.getElementsByClassName("cells");
     if (turn === "red") {
         if (event.currentTarget.lastElementChild.childElementCount === 0) {
             const redPieceCreator = document.createElement("div");
