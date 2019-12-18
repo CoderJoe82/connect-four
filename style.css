@@ -7,7 +7,6 @@
 
 body {
     background: turquoise;
-
 }
 
 h1 {
@@ -16,7 +15,6 @@ h1 {
     color: darkslategray;
     text-align: center;
     margin: 20px;
-
 }
 
 .black {
@@ -25,8 +23,8 @@ h1 {
     border-radius: 50%;
     background-color: black;
     border: 1px solid black;
-
 }
+
 .red {
     height: 80px;
     width: 80px;
@@ -34,8 +32,6 @@ h1 {
     border: 1px solid red;
     background: red;
 }
-    
-
 
 .game {
     background-color: royalblue;
@@ -48,28 +44,38 @@ h1 {
     grid-column-gap: 1px;
     grid-row-gap: 1px;
     justify-items: stretch;*/
+}
 
+@keyframes blink {
+    0% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
 }
-@keyframes blink {  
-    0% { color: red; }
-    100% { color: black; }
-}
+
 @-webkit-keyframes blink {
-    0% { color: red; }
-    100% { color: black; }
+    0% {
+        color: red;
+    }
+    100% {
+        color: black;
+    }
 }
+
 .blink {
     -webkit-animation: blink 1.5s linear infinite;
     -moz-animation: blink 1.5s linear infinite;
     animation: blink 1.5 linear infinite;
-} 
+}
 
 .column {
     background-color: royalblue;
     flex-direction: column-reverse;
     margin: 0 auto;
-
 }
+
 .cell {
     height: 80px;
     width: 80px;
@@ -77,8 +83,8 @@ h1 {
     border: 1px solid #0000CC;
     border-radius: 50%;
     color: transparent;
-    
 }
+
 .button {
     height: 50px;
     width: 80px;
@@ -86,9 +92,4 @@ h1 {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-
 }
-
- 
- 
-

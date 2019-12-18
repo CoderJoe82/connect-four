@@ -37,6 +37,7 @@ const redBlackTurn = function(event) {
                 redCreator.id = "71"
             }
             event.currentTarget.lastElementChild.appendChild(redCreator);
+            document.querySelector(".ospan").style.color = "black";
             turn = "black";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.childElementCount === 0) {
@@ -58,6 +59,8 @@ const redBlackTurn = function(event) {
                 redCreator.id = "72"
             }
             event.currentTarget.lastElementChild.previousElementSibling.appendChild(redCreator);
+            document.querySelector(".ospan").style.color = "black";
+
             turn = "black";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.childElementCount === 0) {
@@ -79,6 +82,8 @@ const redBlackTurn = function(event) {
                 redCreator.id = "73"
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.appendChild(redCreator);
+            document.querySelector(".ospan").style.color = "black";
+
             turn = "black";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
@@ -100,6 +105,8 @@ const redBlackTurn = function(event) {
                 redCreator.id = "74"
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
+            document.querySelector(".ospan").style.color = "black";
+
             turn = "black";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
@@ -121,6 +128,8 @@ const redBlackTurn = function(event) {
                 redCreator.id = "75"
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
+            document.querySelector(".ospan").style.color = "black";
+
             turn = "black";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
@@ -142,6 +151,8 @@ const redBlackTurn = function(event) {
                 redCreator.id = "76"
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
+            document.querySelector(".ospan").style.color = "black";
+
             turn = "black";
             return;
         }
@@ -165,6 +176,8 @@ const redBlackTurn = function(event) {
                 blackCreator.id = "71";
             }
             event.currentTarget.lastElementChild.appendChild(blackCreator);
+            document.querySelector(".ospan").style.color = "red";
+
             turn = "red";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.childElementCount === 0) {
@@ -186,6 +199,9 @@ const redBlackTurn = function(event) {
                 blackCreator.id = "72";
             }
             event.currentTarget.lastElementChild.previousElementSibling.appendChild(blackCreator);
+            document.querySelector(".ospan").style.color = "red";
+
+
             turn = "red";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.childElementCount === 0) {
@@ -207,6 +223,8 @@ const redBlackTurn = function(event) {
                 blackCreator.id = "73";
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.appendChild(blackCreator);
+            document.querySelector(".ospan").style.color = "red";
+
             turn = "red";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
@@ -228,6 +246,8 @@ const redBlackTurn = function(event) {
                 blackCreator.id = "74";
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
+            document.querySelector(".ospan").style.color = "red";
+
             turn = "red";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
@@ -249,6 +269,8 @@ const redBlackTurn = function(event) {
                 blackCreator.id = "75";
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
+            document.querySelector(".ospan").style.color = "red";
+
             turn = "red";
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
@@ -270,13 +292,28 @@ const redBlackTurn = function(event) {
                 blackCreator.id = "76";
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
+            document.querySelector(".ospan").style.color = "red";
+
             turn = "red";
             return;
         }
     }
 }
-
 const gameClicker = document.querySelectorAll(".column");
 for (i = 0; i < gameClicker.length; i++) {
     gameClicker[i].addEventListener("click", redBlackTurn);
+}
+
+document.querySelector(".button").onclick = () => {
+    const cellGrabber = document.getElementsByClassName("cell");
+    for (i = 0; i < cellGrabber.length; i++) {
+        if (cellGrabber[i].lastElementChild !== null) {
+            cellGrabber[i].removeChild(cellGrabber[i].lastElementChild);
+        }
+    }
+    document.querySelector(".ospan").style.color = "black";
+}
+
+window.onload = () => {
+    document.querySelector(".ospan").style.color = "black";
 }
