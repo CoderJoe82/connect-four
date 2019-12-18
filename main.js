@@ -312,6 +312,8 @@ document.querySelector(".button").onclick = () => {
         }
     }
     document.querySelector(".ospan").style.color = "black";
+    turn = "black";
+    console.log(turn);
 }
 
 window.onload = () => {
