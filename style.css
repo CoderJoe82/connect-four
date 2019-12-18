@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: turquoise;
+
+}
+
+h1 {
+    font-family: chewy, sans-serif;
+    font-size: 75px;
+    color: darkslategray;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.black {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
+    border: 1px solid black;
+
+}
+.red {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 1px solid red;
+    background: red;
+}
+    
+
+
+.game {
+    background-color: royalblue;
+    display: flex;
+    width: 580px;
+    margin: 0 auto;
+    /*display: grid;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(6, 100px);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    justify-items: stretch;*/
+
+}
+@keyframes blink {  
+    0% { color: red; }
+    100% { color: black; }
+}
+@-webkit-keyframes blink {
+    0% { color: red; }
+    100% { color: black; }
+}
+.blink {
+    -webkit-animation: blink 1.5s linear infinite;
+    -moz-animation: blink 1.5s linear infinite;
+    animation: blink 1.5 linear infinite;
+} 
+
+.column {
+    background-color: royalblue;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+
+}
+.cells {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border: 1px solid #0000CC;
+    border-radius: 50%;
+    color: transparent;
+    
+}
+.button {
+    height: 50px;
+    width: 80px;
+    background-color: burlywood;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+ 
+ 
+
