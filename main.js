@@ -38,7 +38,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.appendChild(redCreator);
             turn = "black";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.childElementCount === 0) {
             const redCreator = document.createElement("div");
@@ -60,7 +59,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.appendChild(redCreator);
             turn = "black";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.childElementCount === 0) {
             const redCreator = document.createElement("div");
@@ -82,7 +80,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.appendChild(redCreator);
             turn = "black";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
             const redCreator = document.createElement("div");
@@ -104,7 +101,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
             turn = "black";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
             const redCreator = document.createElement("div");
@@ -126,7 +122,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
             turn = "black";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
             const redCreator = document.createElement("div");
@@ -148,12 +143,9 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(redCreator);
             turn = "black";
-            console.log(turn);
             return;
         }
     } else if (turn === "black") {
-        console.log(event.currentTarget.lastElementChild);
-        console.log(event.currentTarget.lastElementChild.lastElementChild);
         if (event.currentTarget.lastElementChild.childElementCount === 0) {
             const blackCreator = document.createElement("div");
             blackCreator.classList.add("black");
@@ -174,7 +166,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.appendChild(blackCreator);
             turn = "red";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.childElementCount === 0) {
             const blackCreator = document.createElement("div");
@@ -196,7 +187,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.appendChild(blackCreator);
             turn = "red";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.childElementCount === 0) {
             const blackCreator = document.createElement("div");
@@ -218,7 +208,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.appendChild(blackCreator);
             turn = "red";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
             const blackCreator = document.createElement("div");
@@ -240,7 +229,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
             turn = "red";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
             const blackCreator = document.createElement("div");
@@ -262,7 +250,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
             turn = "red";
-            console.log(turn);
             return;
         } else if (event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.childElementCount === 0) {
             const blackCreator = document.createElement("div");
@@ -284,7 +271,6 @@ const redBlackTurn = function(event) {
             }
             event.currentTarget.lastElementChild.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.previousElementSibling.appendChild(blackCreator);
             turn = "red";
-            console.log(turn);
             return;
         }
     }
