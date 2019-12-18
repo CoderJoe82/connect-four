@@ -1,7 +1,7 @@
 const gameHolder = document.querySelector(".game");
 let turn = "black";
 
-function createTowers() {
+/*function createTowers() {
     for (j = 0; j < 7; j++) {
         const gameTower = document.createElement("div");
         gameTower.classList.add("column");
@@ -13,7 +13,7 @@ function createTowers() {
         }
     }
 }
-createTowers();
+createTowers();*/
 
 const redBlackTurn = function(event) {
     const columnGrabber = document.getElementsByClassName("column");
