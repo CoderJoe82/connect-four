@@ -1,5 +1,14 @@
+
+// Initialize Game
+
 const gameHolder = document.querySelector(".game");
 let turn = "black";
+
+window.onload = () => {
+    document.querySelector(".ospan").style.color = "black";
+};
+
+document.querySelector(".button").onclick = reset;
 
 function createTowers() {
     for (let towerIndex = 0; towerIndex < 7; towerIndex++) {
@@ -168,12 +177,15 @@ const redBlackTurn = function(event) {
     }
 };
 
+
+// Click Events:
+
 const gameClicker = document.querySelectorAll(".column");
 for (i = 0; i < gameClicker.length; i++) {
     gameClicker[i].addEventListener("click", redBlackTurn);
 };
 
-document.querySelector(".button").onclick = () => {
+function reset() {
     const cellGrabber = document.getElementsByClassName("cell");
     for (i = 0; i < cellGrabber.length; i++) {
         if (cellGrabber[i].lastElementChild !== null) {
@@ -183,12 +195,15 @@ document.querySelector(".button").onclick = () => {
     document.querySelector(".ospan").style.color = "black";
     turn = "black";
     console.log(turn);
+    model = [
+        ['', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', ''],
+        ['', '', '', '', '', '', '']
+    ];
 }
-
-window.onload = () => {
-    document.querySelector(".ospan").style.color = "black";
-}
-
 
 
  // Game State and Win Logic
@@ -237,8 +252,11 @@ function gameOver(currentTurn) {
         if(cell !== '') {
         if(cell === model[y][x+1] && cell === model[y][x+2] && cell === model[y][x+3]) {
             console.log("4 in a row horizontal found at " + (x+1) + ":" + (y+1));
-            alert(currentTurn.toUpperCase() + ' WINS!');
-            return true;
+            setTimeout(() => {
+                alert(currentTurn.toUpperCase() + ' WINS!');
+                reset();
+                return true;   
+            },100);
         };
         };
     };
@@ -251,8 +269,11 @@ function gameOver(currentTurn) {
         if(cell !== '') {
         if(cell === model[y+1][x] && cell === model[y+2][x] && cell === model[y+3][x]) {
             console.log("4 in a row vertical found at " + (x+1) + ":" + (y+1));
-            alert(currentTurn.toUpperCase() + ' WINS!');
-            return true;
+            setTimeout(() => {
+                alert(currentTurn.toUpperCase() + ' WINS!');
+                reset();
+                return true;   
+            },100);
         };
         };
     };
@@ -265,8 +286,11 @@ function gameOver(currentTurn) {
         if(cell !== '') {
         if(cell === model[y+1][x+1] && cell === model[y+2][x+2] && cell === model[y+3][x+3]) {
             console.log("4 in a row down-right found at " + (x+1) + ":" + (y+1));
-            alert(currentTurn.toUpperCase() + ' WINS!');
-            return true;
+            setTimeout(() => {
+                alert(currentTurn.toUpperCase() + ' WINS!');
+                reset();
+                return true;   
+            },100);
         };
         };
     };
@@ -279,22 +303,26 @@ function gameOver(currentTurn) {
         if(cell !== '') {
         if(cell === model[y-1][x+1] && cell === model[y-2][x+2] && cell === model[y-3][x+3]) {
             console.log("4 in a row down-left found at " + (x+1) + ":" + (y+1));
-            alert(currentTurn.toUpperCase() + ' WINS!');
-            return true;
+            setTimeout(() => {
+                alert(currentTurn.toUpperCase() + ' WINS!');
+                reset();
+                return true;   
+            },100);
         };
         };
     };
     };
 
-    
+
     // CHECK FOR DRAW
     let blackCount = document.querySelectorAll('.black').length;
     let redCount = document.querySelectorAll('.red').length;
     if(blackCount + redCount === 42) {
-        alert("IT'S A DRAW!");
-        return true;
+        setTimeout(() => {
+            alert("IT'S A DRAW!");
+            reset();
+            return true;   
+        },100);
     };
 
 }
-
-// TODO - MAKE RESET LOGIC A FUNCTION AND ADD TO HASWON
