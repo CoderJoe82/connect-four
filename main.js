@@ -74,7 +74,7 @@ function reset() {
             cellGrabber[i].removeChild(cellGrabber[i].lastElementChild);
         }
     }
-    document.querySelector(".ospan").style.color = "black";
+    document.getElementById("ospan").style.color = "black";
     turn = "black";
     console.log(turn);
     model = [
