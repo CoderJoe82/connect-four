@@ -4,7 +4,7 @@ const gameHolder = document.querySelector(".game");
 let turn = "black";
 
 window.onload = () => {
-    document.querySelector(".ospan").style.color = "black";
+    document.getElementById("ospan").style.color = "black";
 };
 
 document.querySelector(".button").onclick = reset;
@@ -29,14 +29,12 @@ const redBlackTurn = function(event) {
     if (turn === "red") {
         const columnPlayerClicks = event.currentTarget
         const columnGrabber = columnPlayerClicks.children;
-        console.log(columnGrabber.length);
-        const cellGrabber = document.getElementsByClassName("cell");
         for (column = 0; column < columnGrabber.length; column++) {
             if (columnGrabber[(column + ((columnGrabber.length) - (column + 1))) - column].childElementCount === 0) {
                 const redCreator = document.createElement("div");
                 redCreator.classList.add("red");
                 columnGrabber[(column + ((columnGrabber.length) - (column + 1))) - column].appendChild(redCreator);
-                document.querySelector(".ospan").style.color = "black";
+                document.getElementById("ospan").style.color = "black";
                 updateGameState();
                 gameOver(turn);
                 turn = "black";
@@ -46,14 +44,12 @@ const redBlackTurn = function(event) {
     } else if (turn === "black") {
         const columnPlayerClicks = event.currentTarget
         const columnGrabber = columnPlayerClicks.children;
-        console.log(columnGrabber.length);
-        const cellGrabber = document.getElementsByClassName("cell");
         for (column = 0; column < columnGrabber.length; column++) {
             if (columnGrabber[(column + ((columnGrabber.length) - (column + 1))) - column].childElementCount === 0) {
                 const blackCreator = document.createElement("div");
                 blackCreator.classList.add("black");
                 columnGrabber[(column + ((columnGrabber.length) - (column + 1))) - column].appendChild(blackCreator);
-                document.querySelector(".ospan").style.color = "black";
+                document.getElementById("ospan").style.color = "red";
                 updateGameState();
                 gameOver(turn);
                 turn = "red";
@@ -78,7 +74,7 @@ function reset() {
             cellGrabber[i].removeChild(cellGrabber[i].lastElementChild);
         }
     }
-    document.querySelector(".ospan").style.color = "black";
+    document.getElementById("ospan").style.color = "black";
     turn = "black";
     console.log(turn);
     model = [
