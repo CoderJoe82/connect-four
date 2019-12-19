@@ -9,12 +9,15 @@
 body {
     background: turquoise;
     position: relative;
+<<<<<<< HEAD
     background-image: url(clouds.jpeg);
     width: 100%;
     height: 100vh;
     
     
 
+=======
+>>>>>>> ba368a054ffc64c719e55f8868125988fb0a2158
 }
 
 h1 {
@@ -234,3 +237,8 @@ h1 {
  
  
 
+#jm {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+}
