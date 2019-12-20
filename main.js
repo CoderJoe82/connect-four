@@ -36,7 +36,7 @@ const redBlackTurn = function(event) {
                 columnGrabber[(column + ((columnGrabber.length) - (column + 1))) - column].appendChild(redCreator);
                 document.getElementById("ospan").style.color = "black";
                 updateGameState();
-                gameOver(turn);
+                isGameOver(turn);
                 turn = "black";
                 return;
             }
@@ -51,7 +51,7 @@ const redBlackTurn = function(event) {
                 columnGrabber[(column + ((columnGrabber.length) - (column + 1))) - column].appendChild(blackCreator);
                 document.getElementById("ospan").style.color = "red";
                 updateGameState();
-                gameOver(turn);
+                isGameOver(turn);
                 turn = "red";
                 return;
             }
@@ -119,7 +119,7 @@ function updateGameState() {
 }
 
 
-function gameOver(currentTurn) {
+function isGameOver(currentTurn) {
 
     // Create Edges
     const edgeX = model[0].length - 3;
