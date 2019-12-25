@@ -9,7 +9,7 @@
 body {
     background: turquoise;
     position: relative;
-    background-image: url(clouds.jpeg);
+    background-image: url(img/clouds.jpeg);
     width: 100%;
     height: 100vh;
 }

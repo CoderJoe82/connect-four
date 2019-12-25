@@ -1,107 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Assessment: Connect-Four</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Assessment: Connect-Four</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
 
-<body>
+  <body>
     <h1>C<span id="ospan">o</span>nnect 4</h1>
-
     <div class='container'>
-        <p class="instructions">
-            <ul>
-                <li class="blank"></li>
-                <li>HOW TO PLAY<br /></li><br />
-                <li>Choose colors</li><br />
-                <li>Black plays first</li><br />
-                <li>Click on column where you want your disc</li><br />
-                <li>Alternate turns</li><br />
-                <li>Four in a row wins, vertical, horizontal, diagonal</li><br />
-            </ul>
-        </p>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h3>Meet the Developers</h3>
-                    <img id="qp" src="quinton.png" alt="Quinton">
-                    <img id="jp" src="joseph.png" alt="Joseph">
-                    <img id="jm" src="joanna2.png" alt="Jo Anna">
-                </div>
-                <div class="flip-card-back">
-                    <h3>Bios</h3>
-                    <p class="qpb">Quinton Price, Project Lead, <br>JavaScript Ninja</p>
-                    <p class="jpb">Joseph Padgett, <br>JavaScript Tiger</p>
-                    <p class="jmb">Jo Anna Mollman, <br>UI, CSS</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- <div class='column' id='1'>
-      <div class='cell' id='1'></div>
-      <div class='cell' id='2'></div>
-      <div class='cell' id='3'></div>
-      <div class='cell' id='4'></div>
-      <div class='cell' id='5'></div>
-      <div class='cell' id='6'></div>
+      <p class="instructions">
+          <ul>
+              <li class="blank"></li>
+              <li>HOW TO PLAY<br /></li><br />
+              <li>Choose colors</li><br />
+              <li>Black plays first</li><br />
+              <li>Click on column where you want your disc</li><br />
+              <li>Alternate turns</li><br />
+              <li>Four in a row wins, vertical, horizontal, diagonal</li><br />
+          </ul>
+      </p>
+      <div class="flip-card">
+          <div class="flip-card-inner">
+              <div class="flip-card-front">
+                  <h3>Meet the Developers</h3>
+                  <img id="qp" src="img/quinton.png" alt="Quinton">
+                  <img id="jp" src="img/joseph.png" alt="Joseph">
+                  <img id="jm" src="img/joanna2.png" alt="Jo Anna">
+              </div>
+              <div class="flip-card-back">
+                  <h3>Bios</h3>
+                  <p class="qpb">Quinton Price, Project Lead, <br>JavaScript Ninja</p>
+                  <p class="jpb">Joseph Padgett, <br>JavaScript Tiger</p>
+                  <p class="jmb">Jo Anna Mollman, <br>UI, CSS</p>
+              </div>
+          </div>
+      </div>
+      <div class="game"></div>
+      <button class="button">Reset Game</button>
     </div>
-    <div class='column' id='2'>
-      <div class='disc' id='7'></div>
-      <div class='disc' id='8'></div>
-      <div class='disc' id='9'></div>
-      <div class='disc' id='10'></div>
-      <div class='disc' id='11'></div>
-      <div class='disc' id='12'></div>
-    </div>
-    <div class='column' id='3'>
-      <div class='disc' id='13'></div>
-      <div class='disc' id='14'></div>
-      <div class='disc' id='15'></div>
-      <div class='disc' id='16'></div>
-      <div class='disc' id='17'></div>
-      <div class='disc' id='18'></div>
-    </div>
-    <div class='column' id='4'>
-      <div class='disc' id='19'></div>
-      <div class='disc' id='20'></div>
-      <div class='disc' id='21'></div>
-      <div class='disc' id='22'></div>
-      <div class='disc' id='23'></div>
-      <div class='disc' id='24'></div>
-    </div>
-    <div class='column' id='5'>
-      <div class='disc' id='25'></div>
-      <div class='disc' id='26'></div>
-      <div class='disc' id='27'></div>
-      <div class='disc' id='28'></div>
-      <div class='disc' id='29'></div>
-      <div class='disc' id='30'></div>
-    </div>
-    <div class='column' id='6'>
-      <div class='disc' id='31'></div>
-      <div class='disc' id='32'></div>
-      <div class='disc' id='33'></div>
-      <div class='disc' id='34'></div>
-      <div class='disc' id='35'></div>
-      <div class='disc' id='36'></div>
-    </div>
-    <div class='column' id='7'>
-      <div class='cell' id='37'></div>
-      <div class='cell' id='38'></div>
-      <div class='cell' id='39'></div>
-      <div class='cell' id='40'></div>
-      <div class='cell' id='41'></div>
-      <div class='cell' id='42'></div>
-    </div> -->
-        </divc>
-
-        <div class="game"></div>
-        <button class="button">Reset Game</button>
-        <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 
 </html>
