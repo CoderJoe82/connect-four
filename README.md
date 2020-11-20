@@ -1,5 +1,10 @@
 # Assessment: Connect-Four #
 
+### Important Note: ###
+
+This was a group project. My only contributions were making the O in Connect change from black and red depending on who's turn it is and the placement of the pieces on a board click.
+
+
 ### Overview ###
 
 In Connect-Four, one player is assigned Red and the other player is assigned Black. Players alternate inserting their pieces into one of the 7 columns of a **7x6 grid**. The first player to get **four** of their pieces in a row (horizontal, vertical, or diagonal), wins.
